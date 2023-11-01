@@ -35,11 +35,11 @@ const addTask = () => {
 
     const deleteBtn = document.querySelectorAll(".delete");
     deleteBtn.forEach((button) => {
-        button.onclick = () => { 
+        button.onclick = () => {
             button.parentNode.remove();
             taskCount -= 1;
-            displayCount(taskCount); 
-            checkbox.click();
+            displayCount(taskCount);
+        }
     });
 
     const editBtn = document.querySelectorAll(".edit");
