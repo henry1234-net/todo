@@ -35,12 +35,10 @@ const addTask = () => {
 
     const deleteBtn = document.querySelectorAll(".delete");
     deleteBtn.forEach((button) => {
-        button.onclick = () => {
-          // button.parentNode.remove();
-           // taskCount -= 1;
-           // displayCount(taskCount);
-            checkbox.change();
-        }
+        button.onclick = (e) => { 
+            const checkbox = button.previousElementSibling; // Get the checkbox element 
+            checkbox.checked = true; // Mark the checkbox as checked 
+            checkbox.dispatchEvent(new Event("change")); // Trigger the change event };
     });
 
     const editBtn = document.querySelectorAll(".edit");
