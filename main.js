@@ -35,7 +35,7 @@ const addTask = () => {
 
     const deleteBtn = document.querySelectorAll(".delete");
     deleteBtn.forEach((button) => {
-        button.onclick = (e) => { 
+        button.onclick = () => { 
             const checkbox = button.previousElementSibling; // Get the checkbox element 
             checkbox.click();
     });
