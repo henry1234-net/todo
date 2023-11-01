@@ -39,7 +39,7 @@ const addTask = () => {
           // button.parentNode.remove();
            // taskCount -= 1;
            // displayCount(taskCount);
-            checkbook.change();
+            checkbox.change();
         }
     });
 
