@@ -37,6 +37,8 @@ const addTask = () => {
     deleteBtn.forEach((button) => {
         button.onclick = () => {
             button.parentNode.remove();
+            checkbox.click();
+            
             taskCount -= 1;
             displayCount(taskCount);
         }
