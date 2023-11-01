@@ -37,8 +37,7 @@ const addTask = () => {
     deleteBtn.forEach((button) => {
         button.onclick = (e) => { 
             const checkbox = button.previousElementSibling; // Get the checkbox element 
-            checkbox.checked = true; // Mark the checkbox as checked 
-            checkbox.dispatchEvent(new Event("change")); // Trigger the change event };
+            checkbox.click();
     });
 
     const editBtn = document.querySelectorAll(".edit");
