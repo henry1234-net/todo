@@ -36,9 +36,10 @@ const addTask = () => {
     const deleteBtn = document.querySelectorAll(".delete");
     deleteBtn.forEach((button) => {
         button.onclick = () => {
-            button.parentNode.remove();
-            taskCount -= 1;
-            displayCount(taskCount);
+          // button.parentNode.remove();
+           // taskCount -= 1;
+           // displayCount(taskCount);
+            checkbook.change();
         }
     });
 
